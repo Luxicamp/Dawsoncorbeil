@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawson Corbeil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+            margin-top: 60px; /* Ajustement pour compenser la position fixe de l'en-tête */
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+            margin-top: 60px; /* Ajustement pour compenser la position fixe de l'en-tête */
+            margin-bottom: 100px; /* Marge en bas de la section */
+        }
+        /* Rectangle vertical pour la photo */
+        .portrait {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            cursor: pointer; /* Curseur pointer au survol */
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function sendEmail() {
+            window.location.href = "mailto:dawsoncorbeilprofessionnel@hotmail.com";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Dawson Corbeil</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="toggleSection('home')">Accueil</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2>Cliquez sur ma photo pour me contacter</h2>
+        <img class="portrait" src="https://i.ibb.co/TRpNbtV/IMG-3479.jpg" alt="Photo de Dawson Corbeil" onclick="sendEmail()">
+        <p>Bonjour, je m'appelle Dawson Corbeil. Je suis un grand entrepreneur canadien.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Dawson Corbeil</p>
+    </footer>
+</body>
+</html>
